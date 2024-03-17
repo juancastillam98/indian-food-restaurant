@@ -1,5 +1,5 @@
 import Image from "next/image";
-import img from "/public/about.png";
+import img from "/about.png";
 import {Button} from "@/components/Button";
 export const About = () => {
     return (
