@@ -5,7 +5,7 @@ import pic3 from "../public/pic3.png";
 export const Reviews = () => {
     return (
         <section id={"reviews"} className={"min-h-[500px] flex flex-col items-center justify-center md:px-32 px-5"}>
-            <h2 className={"text-4xl font-semibold text-center lg:pt-16 pt-24 pb-10"}>Customer's Review</h2>
+            <h2 className={"text-4xl font-semibold text-center lg:pt-16 pt-24 pb-10"}>Customer&apos;s Review</h2>
             <div className={"flex flex-col md:flex-row gap-5 mt-5"}>
                 <ReviewsCard img={pic1} name={"Angela Teller"}/>
                 <ReviewsCard img={pic2} name={"James Stun"}/>
