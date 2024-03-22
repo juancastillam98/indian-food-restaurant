@@ -26,10 +26,25 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        backgroundChange: {
+          "0%": {
+            backgroundColor: "orange",
+            width: "10%"
+          },
+          "50%": {
+            backgroundColor: "orange",
+            width: "50%"
+          },
+          "100%": {
+            backgroundColor: "orange",
+            width: "100%"
+          }
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "backgroundChange": "backgroundChange 0.3s forwards ease-out",
       },
       colors: {
         'bright': 'orange',

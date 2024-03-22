@@ -1,0 +1,35 @@
+.hijo {
+    background-color: transparent;
+}
+
+.padre:hover > .hijo {
+    animation: cambio .2s forwards linear;
+}
+
+@keyframes cambio {
+
+    0% {
+        background-color: orange;
+        color: #0C0C0C;
+        width: 10%;
+    }
+
+    10% {
+        width: 40%;
+        color: #0C0C0C;
+        background-color: orange;
+    }
+
+    40% {
+        width: 70%;
+        color: #0C0C0C;
+        background-color: orange;
+    }
+
+    100% {
+        width: 100%;
+        color: #0C0C0C;
+        background-color: orange;
+        padding: 7px 10px;
+    }
+}

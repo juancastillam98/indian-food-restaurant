@@ -22,12 +22,11 @@ export  default function Dishes(){
             <div className={"flex flex-col justify-between items-center lg:px-32 px-5 mt-10"}>
                 <div className={"w-full"}>
                     {/* eslint-disable-next-line react/no-unescaped-entities */}
-                    <h1 className={"font-semibold text-6xl"}>Look at our menu</h1>
-                    <p className={"text-background"}>Look at our menu s</p>
+                    <h1 className={"font-semibold text-6xl mt-12 md:mt-2"}>Look at our menu</h1>
                 </div>
                 <div className={"flex flex-wrap gap-8 justify-center w-full"}>
                     <Tabs defaultValue={category} className={"mb-24 xl:mb-48 w-full"}>
-                        <TabsList className={" left-0 bg-white flex flex-wrap w-full justify-start my-5 gap-x-2 gap-y-3"}>
+                        <TabsList className={" left-0 flex flex-wrap w-full justify-start my-5 gap-x-3 gap-y-3 z-10"}>
                             {categories.map((category, index)=>(
                                 <TabsTrigger
                                     key={index}
@@ -40,7 +39,7 @@ export  default function Dishes(){
 
                             ))}
                         </TabsList>
-                        <div className={"xl:mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"}>
+                        <div className={"xl:mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 place-items-center"}>
                             {dishesCategory.map((dish, index)=>(
                                 <TabsContent
                                     key={index}
@@ -52,7 +51,6 @@ export  default function Dishes(){
                                 </TabsContent>
                             ))}
                         </div>
-
 
                     </Tabs>
 
